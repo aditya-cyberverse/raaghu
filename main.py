@@ -5,7 +5,7 @@ import time
 import requests
 
 OLLAMA_URL = "http://localhost:11434/api/generate"
-MODEL_NAME = "qwen2.5-coder:7b"
+"qwen2.5-coder:1.5b"
 
 SCHEMA = {
     "type": "object",
@@ -34,7 +34,7 @@ def query_brain(objective: str):
     }
     
     try:
-        res = requests.post(OLLAMA_URL, json=payload, timeout=180)
+        res = requests.post(OLLAMA_URL, json=payload, timeout=None)
         res.raise_for_status()
         raw_output = res.json().get("response", "{}")
         return json.loads(raw_output)
