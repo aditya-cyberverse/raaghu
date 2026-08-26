@@ -1,0 +1,38 @@
+Create a responsive dashboard.html file with the following HTML structure and content:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dark-mode">
+        <h1>Dashboard</h1>
+        <div class="container">
+            <div class="metrics">
+                <h2>System Metrics</h2>
+                <div class="metric">
+                    <p>Memory Usage: <span id="memory"></span>%</p>
+                </div>
+                <div class="metric">
+                    <p>CPU Usage: <span id="cpu"></span>%</p>
+                </div>
+                <div class="metric">
+                    <p>Network Traffic: <span id="traffic"></span>MB/s</p>
+                </div>
+            </div>
+            <div class="chart">
+                <h2>Mock Analytics Chart</h2>
+                <canvas id="chart"></canvas>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>
+```
+This HTML file includes the basic structure of a responsive dashboard page with a dark mode styling using CSS. The metrics are dynamically updated using JavaScript, and the mock analytics chart is created using a canvas element. The script file will handle the JavaScript functionality for the metrics and the chart.
