@@ -1,0 +1,14 @@
+{
+  "name": "raaghu",
+  "version": "0.1.0",
+  "description": "Production-grade modular AI agent harness",
+  "main": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "test": "node --test",
+    "dev": "node --watch src/index.ts"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
